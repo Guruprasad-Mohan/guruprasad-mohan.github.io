@@ -1,11 +1,15 @@
 import React from "react";
+import "./aboutme.css"
 
 const AboutMe = () => {
     return (
         <>
-            <h2>About Me</h2>
-            <p>Full-stack developer using .NET and React.</p>
-            <p>Code enthusiast & a life long learner...</p>
+            <h5>About Me</h5>
+            <div className="font-body">
+                I am Guruprasad Mohan, working as a Software Engg.
+                I am a Full-stack developer using .NET, Azure and React.
+                <p>Code enthusiast & a life long learner.</p>
+            </div>
         </>
     );
 };

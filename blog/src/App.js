@@ -1,5 +1,9 @@
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 import './App.css';
 import AboutMe from './components/about/aboutme';
+import BlogNov212021 from './components/blogs/blog-Nov21-2021';
+import BlogNov292021 from './components/blogs/blog-Nov29-2021';
 import Footer from './components/common/footer';
 import Header from './components/common/header';
 
@@ -14,58 +18,18 @@ function App() {
                     </div>
 
                     <div className="col-sm-8">
-                        <h2>TITLE HEADING</h2>
-                        <h5>Title description, Nov 14, 2021</h5>
-                        <div className="fakeimg">Fake Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
-                        <h2 className="mt-5">TITLE HEADING</h2>
-                        <h5>Title description, Sep 2, 2020</h5>
-                        <div className="fakeimg">Fake Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-                        <h2 className="mt-5">TITLE HEADING</h2>
-                        <h5>Title description, Sep 2, 2020</h5>
-                        <div className="fakeimg">Fake Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-                        <h2 className="mt-5">TITLE HEADING</h2>
-                        <h5>Title description, Sep 2, 2020</h5>
-                        <div className="fakeimg">Fake Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-                        <h2 className="mt-5">TITLE HEADING</h2>
-                        <h5>Title description, Sep 2, 2020</h5>
-                        <div className="fakeimg">Fake Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-                        <h2 className="mt-5">TITLE HEADING</h2>
-                        <h5>Title description, Sep 2, 2020</h5>
-                        <div className="fakeimg">Fake Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <Switch>
+                            <Route exact path="/" component={BlogNov212021} />
+                            <Route path="/blogNov2921" component={BlogNov292021} />
+                        </Switch>
                     </div>
 
                     <div className="col-sm-2">
-                        <h3 className="mt-4">Some Links</h3>
-                        <p>Lorem ipsum dolor sit ame.</p>
-                        <ul className="nav nav-pills flex-column">
+                        <h6 className="mt-4">Links to previous blogs</h6>
+                        <ul className="flex-column">
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">Active</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link disabled" href="#">Disabled</a>
+                                <a className="nav-link active" href="/blogNov2921">Blog Nov29, 2021</a>
                             </li>
                         </ul>
                     </div>
