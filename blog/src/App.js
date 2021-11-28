@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import './App.css';
 import AboutMe from './components/about/aboutme';
 import BlogNov212021 from './components/blogs/blog-Nov21-2021';
-import BlogNov292021 from './components/blogs/blog-Nov29-2021';
+import BlogNov282021 from './components/blogs/blog-Nov28-2021';
 import Footer from './components/common/footer';
 import Header from './components/common/header';
 
@@ -21,7 +21,7 @@ function App() {
 
                         <Switch>
                             <Route exact path="/" component={BlogNov212021} />
-                            <Route path="/blogNov2921" component={BlogNov292021} />
+                            <Route path="/blogNov2821" component={BlogNov282021} />
                         </Switch>
                     </div>
 
@@ -29,7 +29,10 @@ function App() {
                         <h6 className="mt-4">Links to previous blogs</h6>
                         <ul className="flex-column">
                             <li className="nav-item">
-                                <a className="nav-link active" href="/blogNov2921">Blog Nov29, 2021</a>
+                                <a className="nav-link active" href="/">Blog Nov21, 2021</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link active" href="/blogNov2821">Blog Nov28, 2021</a>
                             </li>
                         </ul>
                     </div>
