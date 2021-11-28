@@ -20,8 +20,16 @@ function App() {
                     <div className="col-sm-8">
 
                         <Switch>
-                            <Route exact path="/" component={BlogNov212021} />
-                            <Route path="/blogNov2821" component={BlogNov282021} />
+                            {/*<Route path="/blogNov2821" component={BlogNov282021} />*/}
+                            {/*<Route exact path="/" component={BlogNov212021} />*/}
+
+                            <Route path="/blogNov2821">
+                                <BlogNov282021 />
+                            </Route>
+                            <Route exact path="/">
+                                <BlogNov212021 />
+                            </Route>
+                            
                         </Switch>
                     </div>
 
