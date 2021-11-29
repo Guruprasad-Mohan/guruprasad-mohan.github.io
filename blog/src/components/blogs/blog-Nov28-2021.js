@@ -44,7 +44,8 @@ const BlogNov282021 = () => {
                 </li>
             </ul>
             <h5>Demo Application</h5>
-            <p>Clone the repository - https://github.com/Guruprasad-Mohan/ApiClientDemo.git for a sample implementation.
+            <p>Clone the repository - <b>https://github.com/Guruprasad-Mohan/ApiClientDemo.git</b> for a sample implementation.
+            <br/>
             This a simple API implementation to demo the features of the Httprepl command tool.
             <br/>
             The API contains 4 endpoints to support CRUD operations on a simple list of strings. <br/>

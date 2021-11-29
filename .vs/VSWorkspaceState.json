@@ -3,8 +3,10 @@
     "",
     "\\blog",
     "\\blog\\src",
-    "\\blog\\src\\components"
+    "\\blog\\src\\components",
+    "\\blog\\src\\components\\about",
+    "\\blog\\src\\components\\blogs"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\blog\\package.json",
   "PreviewInSolutionExplorer": false
 }
