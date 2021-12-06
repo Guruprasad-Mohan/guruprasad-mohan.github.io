@@ -4,6 +4,7 @@ import './App.css';
 import AboutMe from './components/about/aboutme';
 import BlogNov212021 from './components/blogs/blog-Nov21-2021';
 import BlogNov282021 from './components/blogs/blog-Nov28-2021';
+import BlogDec062021 from './components/blogs/blog-Dec06-2021';
 import Footer from './components/common/footer';
 import Header from './components/common/header';
 
@@ -25,6 +26,9 @@ function App() {
                             <Route path="/blogNov2821">
                                 <BlogNov282021 />
                             </Route>
+                            <Route path="/blogDec0621">
+                                <BlogDec062021 />
+                            </Route>
                         </Switch>
                     </div>
 
@@ -36,6 +40,9 @@ function App() {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link active" href="/blogNov2821">Blog Nov28, 2021</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link active" href="/blogDec0621">Blog Dec06, 2021</a>
                             </li>
                         </ul>
                     </div>
