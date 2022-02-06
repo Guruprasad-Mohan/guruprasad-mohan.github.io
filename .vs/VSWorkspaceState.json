@@ -2,9 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\blog",
+    "\\blog\\public",
+    "\\blog\\src",
+    "\\blog\\src\\components",
+    "\\blog\\src\\components\\about",
     "\\blog\\src\\components\\blogs",
     "\\blog\\src\\components\\common"
   ],
-  "SelectedNode": "\\blog\\README.md",
+  "SelectedNode": "\\blog\\src\\components\\blogs\\blogs.css",
   "PreviewInSolutionExplorer": false
 }
